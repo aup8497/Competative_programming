@@ -1,0 +1,35 @@
+//newly learnt things in c++
+
+#always use `using namespace std;` no matter what
+#'endl' can be used instead '\n'
+#while defining a class's method outside a class we use the scope resolution operator :: 
+	i.e
+		#include <iostream>
+		using namespace std;
+		class Line
+		{
+			public:
+			double length;
+			void setLength( double len );
+			double getLength( void );
+		};
+		// Member functions definitions
+		double Line::getLength(void)
+		{
+			return length ;
+		}
+
+# but while extending a subclass from a super class we use           :      (colon)
+#we can input two or more variables using `cin >> x >> y`
+#every member of a class by default will have private access specifier
+#after definition of a class block use ;
+#after definition of a method dont use ;
+#to use string functions as in c for char array use 
+`#include<cstring>`
+#to include string as a class (as in java)use `#include<string>`
+#Always use public access specifier because by default it is private and you cant acces it in main if main is outside the class
+
+#`this` is not a reference it's a pointer 
+#in C++ when you're using `this` keyword unlike in JAVA you should use this->member (and not this.member)  
+#`static variables`(for objects) can't be defined inside the class ,it should always be defined outside the class itself using the resolution opertator :: to specify ehich class it belongs to
+#
