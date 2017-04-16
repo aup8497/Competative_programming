@@ -27,7 +27,7 @@ void dfs(int i){
 			res=max(res,cnt);
 			dfs(v[i][j]);
 			cnt--;
-			//making the value of the node=0  after returning (coming out of the recursion-as this will not be contained in the path) 
+			//unmarking the node v[i][j] after returning (coming out of the recursion-as this will not be contained in the path) 
 			visited[v[i][j]]=0;
 		}
 	}
