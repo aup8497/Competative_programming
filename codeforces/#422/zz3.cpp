@@ -17,7 +17,7 @@ std::vector< pair<int,pair<int,int> > > v;
 
 	for(i=0;i<n;i++){
 		cin >> u >> v >> w;
-		v.push_back()
+		v.push_back();
 	}
 
 
